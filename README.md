@@ -1,100 +1,85 @@
-# Welcome to React Router!
+# [WIP] 🍽️ Meal Calorie Pizza Visualizer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A modern web application that helps users track their meal calorie intake through an intuitive pizza-based visualization system.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+> <span style="color: orange">**Note:** Currently, the application is a work in progress and does not have any AI functionality.</span>
 
-## Features
+## 🌟 Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- 🎯 Visual calorie tracking with an interactive pizza wheel
+- 🎨 Beautiful, realistic food visualization
 
-## Getting Started
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 20.x or later
+- npm or pnpm
 
 ### Installation
 
-Install the dependencies:
-
 ```bash
-npm install
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
 ```
 
-### Development
+## 🛠️ Tech Stack
 
-Start the development server with HMR:
+- React Router 7
+- React 19
+- TypeScript
+- Tailwind CSS
+- Vite
 
-```bash
-npm run dev
+## 🏗️ Project Structure
+
+```
+app/
+├── components/         # React components
+│   ├── pizza-slice.tsx
+│   ├── pizza-toppings.tsx
+│   └── pizza-visualization.tsx
+├── helpers/           # Utility functions
+├── routes/            # Application routes
+└── utils/            # API utilities
 ```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
+## 🧪 Development
 
 ```bash
-npm run build
+# Run development server
+pnpm dev
+
+# Type checking
+pnpm typecheck
+
+# Production build
+pnpm build
 ```
 
-## Deployment
+## 🐳 Docker Support
 
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
+Build and run using Docker:
 
 ```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
+# Build the image
+docker build -t meal-tracker .
 
 # Run the container
-docker run -p 3000:3000 my-app
+docker run -p 3000:3000 meal-tracker
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+## 📦 Deployment
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+The application can be deployed to any platform that supports Node.js or Docker containers.
 
-### DIY Deployment
+## 🤝 Contributing
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Make sure to deploy the output of `npm run build`
+## 📄 License
 
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+This project is licensed under the MIT License - see the LICENSE file for details.
